@@ -10,14 +10,21 @@ void main(){
       number = Random().nextInt(46);
     }
     r.add(number);
-    
   }
 
   Set<int> result = r.toSet().intersection(lotto.toSet());
 
-  if(result.isNotEmpty) {
-    print("발급한 로또 번호: $r");
-    print("당첨번호: $lotto");
-    print(result);
+  print("발급한 로또 번호: $r");
+  if(result.length >= 5){
+      print("1등 당첨");
+  } else if(result.length ==4){
+    print("2등 당첨");
+  } else if(result.length ==3){
+    print("3등 당첨");
+  } else{
+    print("당첨 실패");
   }
+
+  r.clear();
+  print("현재 발급한 로또 번호: $r");
 }
