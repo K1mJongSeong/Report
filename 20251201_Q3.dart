@@ -16,13 +16,13 @@ void main(){
 
   print("발급한 로또 번호: $r");
   if(result.length >= 5){
-      print("1등 당첨");
+      print("당첨 여부: 1등 당첨");
   } else if(result.length ==4){
-    print("2등 당첨");
+    print("당첨 여부: 2등 당첨");
   } else if(result.length ==3){
-    print("3등 당첨");
+    print("당첨 여부: 3등 당첨");
   } else{
-    print("당첨 실패");
+    print("당첨 여부: 당첨 실패");
   }
 
   r.clear();
