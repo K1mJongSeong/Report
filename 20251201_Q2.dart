@@ -19,6 +19,11 @@ void main(){
   for(int i = 1; i <= 5; i++){
     stdout.write("$i 번째 상품 번호 입력(1=티셔츠,2=바지,3=모자): ");
     String? input = stdin.readLineSync();
+    if(!product.containsKey(input)){
+      print("잘못된 상품 번호입니다. 기본값으로 대체합니다.");
+      cart.add("1");
+      continue;
+    }
 
     cart.add(input!);
   }
