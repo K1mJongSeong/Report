@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(){
-/*인코딩 문제로 cart 배열에 한글 출력이 되지 않아 숫자로 상품 이름을 대체 하였습니다.*/
+/*인코딩 문제로 cart 배열에 한글 출력이 되지 않아 숫자로 상품 이름을 대체 하였습니다.(windows terminal 설치 불가 환경)*/
   Map<String, int> product = {
     "1" : 10000, //티셔츠
     "2" : 8000, //바지
